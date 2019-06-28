@@ -20,6 +20,12 @@ RSpec.describe LongestConsec do
       k = -2
       expect(subject.longest_consec(array, k)).to eq ""
     end
+
+    it "returns empty when k = 0" do
+      array = ["words", "anotherword"]
+      k = 0
+      expect(subject.longest_consec(array, k)).to eq ""
+    end
   end
 
 end
